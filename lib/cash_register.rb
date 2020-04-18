@@ -3,7 +3,7 @@ class CashRegister
 
   attr_accessor :discount, :total, :items
 
-def initialize(employee_discount = 20)
+def initialize(employee_discount = 0)
   @total = 0
   @discount = employee_discount
   @items = []
@@ -16,8 +16,8 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
-  if CashRegister.new == CashRegister.new.discount
-    @total - @discount
+  if @discount != 0
+    @total * 0.8
   end
 end
 
