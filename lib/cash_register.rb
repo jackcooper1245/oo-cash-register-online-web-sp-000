@@ -26,7 +26,7 @@ end
 
 def void_last_transaction
   @items.pop
-  self.total - self.last_transaction
+self.total = self.total - self.last_transaction
 end
 
 
