@@ -14,6 +14,7 @@ end
 
 def add_item(title, price)
   @total += price.to_f
+  title
 end
 
 end
