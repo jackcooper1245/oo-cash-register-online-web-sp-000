@@ -10,16 +10,6 @@ def initialize(employee_discount = 0)
   @last_transaction = 0
 end
 
-def last_transcation(last_transcation)
-  @last_transaction = last_transaction
-end
-
-def last_transaction
-  @last_transaction
-end
-
-end
-
 def add_item(title, price, quantity = 1)
   @total += price * quantity
   quantity.times do @items << title end
