@@ -17,7 +17,9 @@ def add_item(title, price, quantity = 1)
 end
 
 def apply_discount
-  @total - @discount
+  if CashRegister.new == CashRegister.new(employee_discount)
+    @total - @discount
+  end
 end
 
 end
