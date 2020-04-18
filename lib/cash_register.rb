@@ -12,7 +12,7 @@ def total
   @total
 end
 
-def add_item(title, price, quantity = nil)
+def add_item(title, price, quantity = 1)
   @total += price.to_f
   title
 end
