@@ -7,12 +7,13 @@ def initialize(employee_discount = 0)
   @total = 0
   @discount = employee_discount
   @items = []
-  @last_transaction = []
 end
 
 def add_item(title, price, quantity = 1)
   @total += price * quantity
   quantity.times do @items << title end
+    @last_transaction = @total
+    @total  
 end
 
 def apply_discount
@@ -25,7 +26,7 @@ def apply_discount
 end
 
 def void_last_transaction
-@total = @total - @last_transaction.to_f
+@total = @total - @last_transaction
 end
 
 end
