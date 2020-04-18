@@ -7,7 +7,7 @@ def initialize(employee_discount = 0)
   @total = 0
   @discount = employee_discount
   @items = []
-  @last_transaction = 0
+  @last_transaction = []
 end
 
 def add_item(title, price, quantity = 1)
@@ -27,7 +27,5 @@ end
 def void_last_transaction
 self.total = self.total - self.last_transaction
 end
-
-
 
 end
