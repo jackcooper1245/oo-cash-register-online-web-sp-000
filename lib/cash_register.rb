@@ -12,7 +12,7 @@ end
 
 def add_item(title, price, quantity = 1)
   @total += price * quantity
-  @items << title
+  quantity.times do @items << title end
 end
 
 def apply_discount
@@ -23,5 +23,7 @@ def apply_discount
    return "There is no discount to apply."
   end
 end
+
+
 
 end
